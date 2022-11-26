@@ -2209,7 +2209,7 @@ p.bajada {
 .carousel-inner {
     position: relative;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .controlsSlider{
