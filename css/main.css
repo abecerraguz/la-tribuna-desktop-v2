@@ -2212,6 +2212,13 @@ p.bajada {
     overflow: hidden;
 }
 
+#primaryCarrusel .carousel-inner, #carouselLoUltimo .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+
 .controlsSlider{
     position: absolute;
     width: 100%;
