@@ -602,12 +602,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     
 }
 
-.logoHeader__img{
+.logoHeader__img {
     width: 33.333%;
     height: auto;
     text-align: center;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
 
 .logoHeader__img img{
@@ -1679,7 +1680,12 @@ header {
 
 .main-top-container {
     display: flex;
+    flex-wrap: wrap;
 }
+
+.main-top-container > div:first-child {
+    flex: 1 0 100%;
+  }
 
 .main-top-container .ad-aside {
     flex: 0 0 160px;
