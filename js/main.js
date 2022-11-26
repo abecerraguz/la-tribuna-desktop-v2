@@ -30,7 +30,7 @@ $(function(){
 					if ( $(window).scrollTop() > 100 ) {
 						$('#contentHome').css({'padding-top':'387px'})
 						$('#contentPost').css({'padding-top':'434px'})
-						$('#brandAdds').css({'top':'-328px'})
+						$('#brandAdds').css({'top':'-199px'})
 						$('#logo').show();
 					}else {
 						$('#contentHome').css({'padding-top':'460px'})
@@ -44,13 +44,13 @@ $(function(){
 				$('#contentPost').css({'padding-top':'460px'})
 				$(window).bind('scroll', function() {
 					if ( $(window).scrollTop() > 100 ) {
-						$('#contentHome').css({'padding-top':'387px'})
+						$('#contentHome').css({'padding-top':'298px'})
 						$('#contentPost').css({'padding-top':'450px'})
-						$('#brandAdds').css({'top':'-349px'})
+						$('#brandAdds').css({'top':'-199px'})
 						$('#logo').show();
 					}else {
 						$('#logo').hide();
-						$('#contentHome').css({'padding-top':'460px'})
+						$('#contentHome').css({'padding-top':'298px'})
 						$('#brandAdds').css({'top':'0'})
 					}
 				})
