@@ -243,6 +243,9 @@ li.nav-item a i {
     line-height: 20px;
     margin-bottom: 1rem;
     display: block;
+    font-family: utopia-std,serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .category{
@@ -435,12 +438,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     font-size: 1rem;
     line-height: 22px;
     margin-bottom: 1rem;
+    
 }
 
 .cardSection__text h2 a{
 	color: #27313B;
 	text-decoration: none;
     font-size: 1rem;
+    font-family: utopia-std,serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .cardSection__text time{
@@ -2149,6 +2156,9 @@ p.bajada {
     font-size: 28px;
     line-height: 34px;
     color: #27313B;
+    font-family: utopia-std,serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 #carouselOpinion{
@@ -2215,6 +2225,12 @@ p.bajada {
     background: #80808024;
     position: absolute;
     top: 14px;
+}
+
+#carouselLoUltimo .controlsSlider {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
 }
 
 /* .carousel-inner::after {
