@@ -290,15 +290,25 @@ time{
 }
 
 .carousel-control-prev {
-	left: 0;
+    left: 93%;
+    top:100%;
     background: #3498db;
     width: 30px;
+    height: 30px;
+    padding: 0.3rem;
+    border-radius: 100%;
+  
 }
 
 .carousel-control-next {
     right: 0;
+    top:100%;
 	background: #3498db;
     width: 30px;
+    height: 30px;
+    padding: 0.3rem;
+    border-radius: 100%;
+
 }
 
 .bgGrey{
@@ -430,6 +440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .cardSection__text h2 a{
 	color: #27313B;
 	text-decoration: none;
+    font-size: 1rem;
 }
 
 .cardSection__text time{
@@ -2178,3 +2189,40 @@ p.bajada {
     font-size: 0.9rem;
 }
 
+
+.carousel-inner a {
+    text-decoration: none;
+    color: #8f8f8f;
+    font-size: 1.3rem;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.controlsSlider{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.controlsSlider:after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #80808024;
+    position: absolute;
+    top: 14px;
+}
+
+/* .carousel-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: grey;
+    position: absolute;
+} */
