@@ -579,7 +579,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     justify-content:space-around;
     align-items: center;
     background-color: #fff;
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -602,13 +602,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     
 }
 
-.logoHeader__img {
+.logoHeader__img{
     width: 33.333%;
     height: auto;
     text-align: center;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
 }
 
 .logoHeader__img img{
@@ -1680,12 +1679,11 @@ header {
 
 .main-top-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .main-top-container > div:first-child {
     flex: 1 0 100%;
-  }
+}
 
 .main-top-container .ad-aside {
     flex: 0 0 160px;
@@ -1714,6 +1712,9 @@ header {
     line-height: 40px;
     margin-bottom: 20px;
     color: #27313B;
+    font-family: utopia-std,serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .post-main-aside-container{
@@ -2218,7 +2219,7 @@ p.bajada {
     overflow: hidden;
 }
 
-#primaryCarrusel .carousel-inner, #carouselLoUltimo .carousel-inner{
+#primaryCarrusel .carousel-inner, #carouselLoUltimo .carousel-inner {
     position: relative;
     width: 100%;
     overflow: visible;
