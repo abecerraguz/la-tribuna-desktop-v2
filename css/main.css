@@ -2194,10 +2194,15 @@ p.bajada {
     background-color: #e8eff5;
 }
 
-#carouselOpinion .card img{
+#carouselOpinion .card a img{
     border-radius: 100%!important;
     max-width: 150px;
     margin: 0 auto;
+    display: block;
+}
+
+#carouselOpinion .card a i{
+    font-size: 1rem;
 }
 
 #carouselOpinion .card p{
@@ -2247,12 +2252,11 @@ p.bajada {
     bottom: -20px;
 }
 
-/* .carousel-inner::after {
-    display: block;
-    clear: both;
-    content: "";
-    height: 5px;
-    width: 100%;
-    background: grey;
-    position: absolute;
-} */
+#contentHome a{
+    text-decoration: none!important;
+}
+
+#contentHome p.bajada{
+    text-decoration: none!important;
+    color: #787878;
+}
