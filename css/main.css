@@ -475,6 +475,7 @@ time{
 }
 
 .cardSection__text .category{
+    border-bottom: 1px solid #000;
     background: transparent; 
     padding: 0.01rem 0 0.2rem;
     display: block;
