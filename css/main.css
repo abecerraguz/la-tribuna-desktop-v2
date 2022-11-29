@@ -219,8 +219,8 @@ li.nav-item a i {
 }
 
 .contentInfoUltimasNoticias__info .category{
-    background: grey;
-    padding: 0.01rem 0.5rem 0.2rem;
+    /* background: grey; */
+    padding: 0;
     display: inline-block;
     border-radius: 3px;
     margin-bottom: 0.8rem;
@@ -250,7 +250,7 @@ li.nav-item a i {
 
 .category{
     /* background: grey; */
-    background:#3498db;
+    /* background:#3498db; */
     padding: 0.3rem 0.5rem;
     display: inline-block;
     border-radius: 3px;
@@ -260,10 +260,19 @@ li.nav-item a i {
     font-size: 1rem;
 }
 .category a{
-	color: #fff!important;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 400;
     font-size: 0.89rem!important;
+}
+
+.headerSection .category a{
+	color: #fff;
+	text-decoration: none;
+    font-size: 15px!important;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 time{
@@ -314,51 +323,110 @@ time{
 
 }
 
-.bgGrey{
-	/* background-color: #E3E3E3; */
-    /* background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,0.852000175070028) 0%, rgba(227,227,227,1) 100%); */
-
-    /* background: rgb(249,249,249);
-    background: linear-gradient(180deg, rgba(249,249,249,0.852000175070028) 0%, rgba(227,227,227,1) 100%); */
-
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,dddddd+44,dddddd+57,ffffff+100&0+0,0+100 */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,dddddd+50,ffffff+100 */
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+/* .bgGrey{
 
 
-}
+
+
+} */
 
 .bgBlue{
 	background-color: #3498db;
 }
 
-.noticias_primary{background: #939393!important;}
-.noticias_secondary{background: #a3a3a3!important;}
-.nacional_primary{background: #6D4C41!important;}
-.nacional_secondary{background: #8D6E63!important;}
-.internacional_primary{background: #eec70b!important;}
-.internacional_secondary{background: #fad512!important;}
-.cultura_primary{background: #D81B60!important;}
-.cultura_secondary{background: #FF5C8D!important;}
-.opinion_primary{background: #78909C!important;}
-.opinion_secondary{background: #A7C0CD!important;}
-.deportes_primary{background: #FF3D00!important;}
-.deportes_secondary{background: #FF7539!important;}
-.emprende_primary{background: #388E3C!important;}
-.emprende_secondary{background: #6ABF69!important;}
-.salud_primary{background: #0093C4!important;}
-.salud_secondary{background: #4FC3F7!important;}
-.politica_primary{background: #F57C00!important;;}
-.politica_secondary{background: #FFAD42!important;;}
-.economia_primary{background: #424242!important;;}
-.economia_secondary{background: #6D6D6D!important;;}
-.policial_primary{background: #002171!important;;}
-.policial_secondary{background: #0D47A1!important;;}
+/* NUEVOS COLORES  */
+
+    .background-lo-ultimo_primary{background: #3498db!important;}
+    .border-top-lo-ultimo_primary{border-top: 1px solid #3498db!important;}
+    .border-bottom-lo-ultimo_primary{border-bottom: 1px solid #3498db!important;}
+    .color-text-lo-ultimo_primary{color:#3498db!important;}
+
+    .background-nacional_primary{background: #8E4B2D!important;}
+    .border-top-nacional_primary{border-top: 1px solid #8E4B2D!important;}
+    .border-bottom-nacional_primary{border-bottom: 1px solid #8E4B2D!important;}
+    .color-text-nacional_primary{color:#8E4B2D!important;}
+    
+    .background-educacion_primary{background: #8E4B2D!important;}
+    .border-top-educacion_primary{border-top: 1px solid #8E4B2D!important;}
+    .border-bottom-educacion_primary{border-bottom: 1px solid #8E4B2D!important;}
+    .color-text-educacion_primary{color:#8E4B2D!important;}
+
+    .background-internacional_primary{background: #FFDC4C!important;}
+    .border-top-internacional_primary{border-top: 1px solid #FFDC4C!important;}
+    .border-bottom-internacional_primary{border-bottom: 2px solid #FFDC4C!important;}
+    .color-text-internacional_primary{color:#FFDC4C!important;}
+
+    .background-salud_primary{background: #4FB5FF!important;}
+    .border-top-salud_primary{border-top: 1px solid #4FB5FF!important;}
+    .border-bottom-salud_primary{border-bottom: 1px solid #4FB5FF!important;}
+    .color-text-salud_primary{color:#4FB5FF!important;}
+
+    .background-politica_primary{background: #F17C28!important;}
+    .border-top-politica_primary{border-top: 1px solid #F17C28!important;}
+    .border-bottom-politica_primary{border-bottom: 1px solid #F17C28!important;}
+    .color-text-politica_primary{color:#F17C28!important;}
+
+    .background-economia_primary{background: #000!important;}
+    .border-top-economia_primary{border-top: 1px solid #000!important;}
+    .border-bottom-economia_primary{border-bottom: 1px solid #000!important;}
+    .color-text-policial_primary{color:#000!important;}
+
+    .background-agricultura_primary{background: #000!important;}
+    .border-top-agricultura_primary{border-top: 1px solid #000!important;}
+    .border-bottom-agricultura_primary{border-bottom: 1px solid #000!important;}
+    .color-text-agricultura_primary{color:#000!important;}
+
+
+    .background-policial_primary{background: #2C40FF!important;}
+    .border-top-policial_primary{border-top: 1px solid #2C40FF!important;}
+    .border-bottom-policial_primary{border-bottom: 1px solid #2C40FF!important;}
+    .color-text-policial_primary{color:#2C40FF!important;}
+    
+    .background-judicial_primary{background: #2C40FF!important;}
+    .border-top-judicial_primary{border-top: 1px solid #2C40FF!important;}
+    .border-bottom-judicial_primary{border-bottom: 1px solid #2C40FF!important;}
+    .color-text-judicial_primary{color:#2C40FF!important;}
+    
+
+
+    .background-cultura_primary{background: #7E7BF2!important;}
+    .border-top-cultura_primary{border-top: 1px solid #7E7BF2!important;}
+    .border-bottom-cultura_primary{border-bottom: 1px solid #7E7BF2!important;}
+    .color-text-cultura_primary{color:#7E7BF2!important;}
+
+    .background-panorama_primary{background: #7E7BF2!important;}
+    .border-top-panorama_primary{border-top: 1px solid #7E7BF2!important;}
+    .border-bottom-panorama_primary{border-bottom: 1px solid #7E7BF2!important;}
+    .color-text-panorama_primary{color:#7E7BF2!important;}
+
+    .background-cronica_ciudadana_primary{background: #7E7BF2!important;}
+    .border-top-cronica_ciudadana_primary{border-top: 1px solid #7E7BF2!important;}
+    .border-bottom-cronica_ciudadana_primary{border-bottom: 1px solid #7E7BF2!important;}
+    .color-text-cronica_ciudadana_primary{color:#7E7BF2!important;}
+
+    .background-opinion_primary{background: #B7C0CB!important;}
+    .border-top-opinion_primary{border-top: 1px solid #B7C0CB!important;}
+    .border-bottom-opinion_primary{border-bottom: 2px solid #B7C0CB!important;}
+    .color-text-opinion_primary{color:#B7C0CB!important;}
+    
+    .background-editorial_primary{background: #B7C0CB!important;}
+    .border-top-editorial_primary{border-top: 1px solid #B7C0CB!important;}
+    .border-bottom-editorial_primary{border-bottom: 1px solid #B7C0CB!important;}
+    .color-text-editorial_primary{color:#B7C0CB!important;}
+
+    .background-deportes_primary{background: #F03C4B!important;}
+    .border-top-deportes_primary{border-top: 1px solid #F03C4B!important;}
+    .border-bottom-deportes_primary{border-bottom: 1px solid #F03C4B!important;}
+    .color-text-deportes_primary{color:#F03C4B!important;}
+
+    .background-emprendimiento_primary{background: #36B876!important;}
+    .border-top-emprendimiento_primary{border-top: 1px solid #36B876!important;}
+    .border-bottom-emprendimiento_primary{border-bottom: 1px solid #36B876!important;}
+    .color-text-emprendimiento_primary{color:#36B876!important;}
+/* NUEVOS COLORES  */
+
+
+
 
 
 .headerSection{
@@ -368,8 +436,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .headerSection .category{
-    /* background: grey; */
-    background: #3498db;
     padding: 0.8rem 1.5rem;
     display: inline-block;
     border-radius: 3px 3px 0 0;
@@ -382,7 +448,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .bodySection{
 	width: 100%;
 	height: auto;
-	overflow: hidden;
     /* border-top: 1px solid #eaeaea; */
     /* box-shadow: 0px 0px 3px rgb(0 0 0 / 18%); */
 	/* background: purple; */
@@ -395,11 +460,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background: #fff;
+    background: #f8f8f8;
     margin: 1rem 0;
-    /* box-shadow: 0px 0px 6px rgb(0 0 0 / 18%); */
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 18%);
     border-radius: 5px;
+    position: relative;
 }
 
 .cardSection img{
@@ -410,52 +475,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .cardSection__text .category{
-    background: grey;
-    padding: 0.01rem 0.5rem 0.2rem;
-    display: inline-block;
-    border-radius: 3px;
-    margin-bottom: 0.8rem;
-    font-weight: lighter;
+    background: transparent; 
+    padding: 0.01rem 0 0.2rem;
+    display: block;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
 }
 
 .cardSection__text .category a{
-    color: #fff;
+    color: rgb(0, 0, 0)!important;
 	text-decoration: none;
 	font-weight: 400;
-    font-size: 0.8rem!important;
+    font-size: 12px!important;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cardSection__text{
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-around;
+    justify-content: start;
+    margin-bottom: 1rem;
 }
 
 .cardSection__text h2{
     color: #27313B;
-    font-size: 1rem;
+    font-size: 23px;
     line-height: 22px;
-    margin-bottom: 1rem;
-    
+    /* margin:1rem 0 0 0; */
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cardSection__text h2 a{
 	color: #27313B;
 	text-decoration: none;
-    font-size: 1rem;
-    font-family: utopia-std,serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 .cardSection__text time{
 	color: #27313B;
 	font-weight: 400;
-	font-size: 0.8rem;
-	font-weight: lighter;
-	letter-spacing: 1px;
+	font-size: 12px;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dateShare span{
+	color: #27313B;
+	font-weight: 400;
+	font-size: 12px;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .section-gran-titular .article.main-article .article-image:before {
@@ -1329,6 +1405,9 @@ ul.dropdown-menu.show {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    position: absolute;
+    bottom: 0;
 }
 
 #post .dateShare {
@@ -1339,6 +1418,11 @@ ul.dropdown-menu.show {
     padding: 0 0.5rem 0.5rem 0.5rem;
     border-bottom: 2px solid #efefef;
     font-size: 1.1rem;
+    position:static;
+}
+
+#post .dateShare span i {
+ margin-right:0.5rem;
 }
 
 
@@ -1707,13 +1791,13 @@ header {
 }
 
 .post__content h1{
-    font-size: 33px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 40px;
     margin-bottom: 20px;
     color: #27313B;
     font-family: utopia-std,serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -2058,12 +2142,22 @@ header {
     font-weight: 600;
 }
 
-#post .bodySection article h3 {
-    /* color: #222; */
+#post .bodySection article a{
+    color: #787878;
     font-size: 15px;
     line-height: 21px;
     margin: 0;
     font-weight: 400;
+    text-decoration: none;
+}
+
+#post .bodySection article h3 {
+    color: #787878;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 
@@ -2084,6 +2178,9 @@ header {
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 0 1.5rem 0;
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 p.bajada {
@@ -2160,11 +2257,11 @@ p.bajada {
 /*  */
 
 .article-title{
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 40px;
+    line-height: 42px;
     color: #27313B;
-    font-family: utopia-std,serif;
-    font-weight: 600;
+    font-family: utopia-std, serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -2173,6 +2270,15 @@ p.bajada {
     border-radius: 0.5rem;
     padding: 0 1rem;
     position: relative;
+}
+
+#carouselOpinion h5{
+    text-align: center;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding: 1rem 0 0 0;
 }
 
 #carouselOpinion .carousel-indicators {
@@ -2201,14 +2307,28 @@ p.bajada {
     display: block;
 }
 
-#carouselOpinion .card a i{
-    font-size: 1rem;
+#carouselOpinion .card a span.nombre{
+    font-size: 12px;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 700!important;
+    font-style: normal;
 }
 
 #carouselOpinion .card p{
     margin: 0.5rem 0;
-    line-height: 22px;
-    font-size: 0.9rem;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: franklin-gothic-urw,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#carouselOpinion h6{
+    font-family: utopia-std,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -2227,13 +2347,13 @@ p.bajada {
 #primaryCarrusel .carousel-inner, #carouselLoUltimo .carousel-inner {
     position: relative;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 
 .controlsSlider{
     position: absolute;
-    width: 100%;
+    width: 98%;
     bottom: 0;
 }
 
@@ -2248,8 +2368,8 @@ p.bajada {
 
 #carouselLoUltimo .controlsSlider {
     position: absolute;
-    width: 100%;
-    bottom: -20px;
+    width: 98%;
+    bottom: 0;
 }
 
 #contentHome a{
@@ -2259,5 +2379,8 @@ p.bajada {
 #contentHome p.bajada{
     text-decoration: none!important;
     color: #787878;
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /*  */
