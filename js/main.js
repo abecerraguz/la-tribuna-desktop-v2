@@ -41,7 +41,7 @@ $(function(){
 			break;
 			case  ( value > 1440 && value <= 1792 ):
 				console.log('Mierda tres')
-				$('.logoHeader').css({'padding-top':'300px'})
+				$('.logoHeader').css({'padding-top':'50px'})
 				$('#brandAdds').css({'top':'-56px'})
 				setTimeout(() => {
 					$('#brandAdds').css({'top':'0'})
