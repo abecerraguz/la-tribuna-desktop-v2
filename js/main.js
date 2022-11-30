@@ -42,16 +42,18 @@ $(function(){
 			case  ( value > 1440 && value <= 1792 ):
 				console.log('Mierda tres')
 				$('.logoHeader').css({'padding-top':'300px'})
+				$('#brandAdds').css({'top':'-56px'})
+				setTimeout(() => {
+					$('#brandAdds').css({'top':'0'})
+				}, 1000);
 				$(window).bind('scroll', function() {
 					if ( $(window).scrollTop() > 100 ) {
-						
-						// $('#contentHome').css({'padding-top':'298px'})
-						$('#brandAdds').css({'top':'-199px'})
+						$('#contentHome').css({'padding-top':'50px'})
+						$('#brandAdds').css({'top':'0'})
 						$('#logo').show();
 					}else {
-						
 						$('#logo').hide();
-						// $('#contentHome').css({'padding-top':'298px'})
+						$('#contentHome').css({'padding-top':'50px'})
 						$('#brandAdds').css({'top':'0'})
 					}
 				})
