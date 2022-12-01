@@ -140,7 +140,7 @@ input[type=range]{
         flex-direction: column;
         justify-content: center;
         width: 90%;
-        margin: 5% auto 0;
+        margin: 50px auto 0;
     }
     input[type=range] {
         appearance: scroll-horizontal;

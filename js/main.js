@@ -163,4 +163,23 @@ $(function(){
             $('body,html').animate({scrollTop: 0}, 800);
             // return false;
         });
+
+
+		let iframeTwitter = document.querySelector('.iframeTwitter');
+		// let iframeTwitterDos = document.querySelector('.iframeTwitter')
+		console.log('Salida de iframeTwitter', iframeTwitter.classList.value )
+		let value = iframeTwitter.classList.value
+		switch (value) {
+			case 'iframeTwitter':
+				iframeTwitter.style.cssText = 'width:100%;height:700px;margin:1rem 10%';
+				break;
+		
+			default:
+				break;
+		}
+		let width = iframeTwitter.offsetWidth;
+		let height = iframeTwitterDos
+		console.log('Salida de width--->', width)
+		console.log('Salida de height--->',height)
+
  });
