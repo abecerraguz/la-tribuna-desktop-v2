@@ -10,7 +10,8 @@ window.onload=function(){
       omu=document.getElementById('onmute'),
       ost=document.getElementById('onstop'),
       vol=document.querySelector('input'),
-      pb=document.querySelector('progress');
+      pb=document.querySelector('progress'),
+      onda = document.querySelector('.onda');
   
    // non intrusive js on audio
    // remove controls and make it disappear
@@ -35,7 +36,7 @@ window.onload=function(){
         console.log('Salida de track-->', e.target)
      if(track.paused === true){
        track.play();
-       
+       onda.style.display = 'block';
        opl.style.visibility='visible';
        opl.style.fill='cred';
        opa.style.visibility='hidden';
@@ -44,6 +45,7 @@ window.onload=function(){
      }
      else{
        track.pause();
+       onda.style.display = 'none';
        opa.style.visibility='visible';
        opa.style.fill="#4ca3dd";
        opl.style.visibility='hidden';
@@ -55,6 +57,7 @@ window.onload=function(){
    stopButt.onclick=function(){
      if(track.paused === false){
        track.pause();
+       onda.style.display = 'none';
      }
      track.currentTime=0;
      opl.style.visibility='visible';
@@ -67,10 +70,12 @@ window.onload=function(){
      if(track.muted === false){
        track.muted=true;
        omu.style.fill='coral';
+       onda.style.display = 'none';
      }
      else{
        track.muted=false;
        omu.style.fill='white';
+       onda.style.display = 'block';
      }
    }
    // volume slider
@@ -125,23 +130,23 @@ window.onload=function(){
     
     // loop controller
     // span container to make click on loop button easier
-    var span=document.querySelector('.loop');
-    var olo=document.getElementById('onloop');
+    // var span=document.querySelector('.loop');
+    // var olo=document.getElementById('onloop');
     
-    span.onclick=function(){
-      // loop working only on track
-      // not on stream
-      if(dur != 0){
-        if(track.loop === false){
-          track.loop=true;
-          olo.style.fill='#4ca3dd';
-        }
-        else{
-          track.loop=false;
-          olo.style.fill='white';
-        }
-      }
-    }
+    // span.onclick=function(){
+    //   // loop working only on track
+    //   // not on stream
+    //   if(dur != 0){
+    //     if(track.loop === false){
+    //       track.loop=true;
+    //       olo.style.fill='#4ca3dd';
+    //     }
+    //     else{
+    //       track.loop=false;
+    //       olo.style.fill='white';
+    //     }
+    //   }
+    // }
 
 
 

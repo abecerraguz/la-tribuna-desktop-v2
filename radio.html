@@ -41,6 +41,7 @@ works on audio streams and tracks (change audio src value)
   <div class="container">
     <figure id="player" class="audio">
       <div class="radioImg">
+        <span class="onda"></span>
         <img src="./img/radio-san-cristobal-white.svg" alt="Radio San Cristobal" />
       </div>
       <!-- <audio controls src="http://ice2.somafm.com/suburbsofgoa-32-aac" id="track" class="track" preload="metadata" /> -->
@@ -48,13 +49,9 @@ works on audio streams and tracks (change audio src value)
     </figure>
     <div>
       <time class="bold"></time>&nbsp;<time></time>
-      <span class="loop">
-      <svg width="24px" height="24px">
-        <use id="onloop" xlink:href="#loop" />
-      </svg>
-      </span>
-      <input type="range" min="0" max="100" value="50" />
-      <progress value="0.1"></progress>
+
+      <input type="range" min="0" max="100" value="10" />
+   
 
     </div>
     <div>
