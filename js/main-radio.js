@@ -12,6 +12,7 @@ window.onload=function(){
       vol=document.querySelector('input'),
       pb=document.querySelector('progress'),
       onda = document.querySelector('.onda');
+      
   
    // non intrusive js on audio
    // remove controls and make it disappear
@@ -33,10 +34,11 @@ window.onload=function(){
     }
     
    playButt.onclick=function(e){
-        console.log('Salida de track-->', e.target)
+
      if(track.paused === true){
        track.play();
-       onda.style.display = 'block';
+       onda.style.display = 'inline-block';
+       onda.style.position = 'absolute';
        opl.style.visibility='visible';
        opl.style.fill='cred';
        opa.style.visibility='hidden';
@@ -128,27 +130,7 @@ window.onload=function(){
       track.currentTime=0;
     });
     
-    // loop controller
-    // span container to make click on loop button easier
-    // var span=document.querySelector('.loop');
-    // var olo=document.getElementById('onloop');
-    
-    // span.onclick=function(){
-    //   // loop working only on track
-    //   // not on stream
-    //   if(dur != 0){
-    //     if(track.loop === false){
-    //       track.loop=true;
-    //       olo.style.fill='#4ca3dd';
-    //     }
-    //     else{
-    //       track.loop=false;
-    //       olo.style.fill='white';
-    //     }
-    //   }
-    // }
-
-
+   
 
 
 

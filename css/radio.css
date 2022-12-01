@@ -9,10 +9,10 @@ img{display:block;margin:0 auto;border-radius:50%;border:5px solid white;width:1
 button{width:30%;height:50px;border:none;padding:0;cursor:pointer;border:4px solid white;background:rgba(250,250,250, 0);transition:background .25s ease-in-out;margin:1vw auto;}
 button:hover{background:rgba(250,250,250,.35);transition:background .25s ease-in-out;}
 
-.container{display:flex;flex-direction:column;justify-content:center;width:20vw;margin:5% auto 0;}
+.container{display:flex;flex-direction:column;justify-content:center;width:20%;margin:5% auto 0;}
 
 figure,figure>div,.container > div{display:block;margin:0 auto;}
-figure,.container > div{width:20vw;}
+figure,.container > div{width:100%;}
 
 /* figure>div{width:8vw;} */
 
@@ -135,6 +135,32 @@ input[type=range]{
 }
 
 @media screen and (max-width:64rem){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 5% auto 0;
+    }
+    input[type=range] {
+        appearance: scroll-horizontal;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 1px;
+        cursor: pointer;
+    }
+
+    .onda {
+        position: relative;
+        position: relative;
+        top: -21px;
+        left: 90px;
+        display: none;
+    }
     /* .container {
         display: flex;
         flex-direction: column;
