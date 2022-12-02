@@ -187,7 +187,7 @@ $(function(){
 		radio.addEventListener('click', (e)=>{
 			console.log('Hola')
 			e.preventDefault()
-			const windowFeatures = "left=100,top=100,width=800,height=600";
+			const windowFeatures = "left=100,top=100,width=600,height=600";
 		   const handle = window.open("http://127.0.0.1:5501/radio.html", "mozillaWindow", windowFeatures);
 		})
  });
