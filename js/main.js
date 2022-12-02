@@ -167,19 +167,27 @@ $(function(){
 
 		let iframeTwitter = document.querySelector('.iframeTwitter');
 		// let iframeTwitterDos = document.querySelector('.iframeTwitter')
-		console.log('Salida de iframeTwitter', iframeTwitter.classList.value )
-		let value = iframeTwitter.classList.value
-		switch (value) {
-			case 'iframeTwitter':
-				iframeTwitter.style.cssText = 'width:100%;height:700px;margin:1rem 10%';
-				break;
+		// console.log('Salida de iframeTwitter', iframeTwitter.classList.value )
+		// let value = iframeTwitter.classList.value
+		// switch (value) {
+		// 	case 'iframeTwitter':
+		// 		iframeTwitter.style.cssText = 'width:100%;height:700px;margin:1rem 10%';
+		// 		break;
 		
-			default:
-				break;
-		}
-		let width = iframeTwitter.offsetWidth;
-		let height = iframeTwitterDos
-		console.log('Salida de width--->', width)
-		console.log('Salida de height--->',height)
+		// 	default:
+		// 		break;
+		// }
+		// let width = iframeTwitter.offsetWidth;
+		// let height = iframeTwitterDos
+		// console.log('Salida de width--->', width)
+		// console.log('Salida de height--->',height)
 
+		let radio = document.querySelector('.radio')
+		console.log('Radio',radio)
+		radio.addEventListener('click', (e)=>{
+			console.log('Hola')
+			e.preventDefault()
+			const windowFeatures = "left=100,top=100,width=800,height=600";
+		   const handle = window.open("http://127.0.0.1:5501/radio.html", "mozillaWindow", windowFeatures);
+		})
  });
