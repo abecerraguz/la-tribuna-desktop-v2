@@ -182,12 +182,60 @@ $(function(){
 		// console.log('Salida de width--->', width)
 		// console.log('Salida de height--->',height)
 
+		var iframe = document.querySelector(".iframeTwitter");
+    
+		// Adjusting the iframe height onload event
+		iframe.onload = function(){
+			iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+		}
+
+
+
+
 		let radio = document.querySelector('.radio')
 		console.log('Radio',radio)
 		radio.addEventListener('click', (e)=>{
-			console.log('Hola')
 			e.preventDefault()
 			const windowFeatures = "left=100,top=100,width=600,height=600";
 		   const handle = window.open("http://127.0.0.1:5501/radio.html", "mozillaWindow", windowFeatures);
 		})
  });
+
+ ;(function(document, window, undefined) {
+
+	'use strict';
+
+	if (!document.addEventListener) {
+		return;
+	}
+
+	var iframe;
+
+	function init_iframe() {
+		var height = Math.max(iframe.contentWindow.document.body.scrollHeight, iframe.contentWindow.document.body.offsetHeight, iframe.contentWindow.document.documentElement.clientHeight, iframe.contentWindow.document.documentElement.scrollHeight, iframe.contentWindow.document.documentElement.offsetHeight);
+		iframe.style.height = height + 'px';
+	}
+
+	function init() {
+		iframe = document.querySelector('iframe');
+		if (iframe) {
+
+			iframe.addEventListener('load', init_iframe);
+
+			try {
+				if (iframe.contentWindow.document.readyState !== 'loading') {
+					window.setTimeout(init_iframe);
+				}
+			} catch (e) {
+			}
+
+		}
+	}
+
+	if (document.readyState !== 'loading') {
+		window.setTimeout(init); // Handle asynchronously
+	} else {
+		document.addEventListener('DOMContentLoaded', init);
+	}
+
+})(document, window);
