@@ -165,32 +165,6 @@ $(function(){
         });
 
 
-		let iframeTwitter = document.querySelector('.iframeTwitter');
-		// let iframeTwitterDos = document.querySelector('.iframeTwitter')
-		// console.log('Salida de iframeTwitter', iframeTwitter.classList.value )
-		// let value = iframeTwitter.classList.value
-		// switch (value) {
-		// 	case 'iframeTwitter':
-		// 		iframeTwitter.style.cssText = 'width:100%;height:700px;margin:1rem 10%';
-		// 		break;
-		
-		// 	default:
-		// 		break;
-		// }
-		// let width = iframeTwitter.offsetWidth;
-		// let height = iframeTwitterDos
-		// console.log('Salida de width--->', width)
-		// console.log('Salida de height--->',height)
-
-		var iframe = document.querySelector(".iframeTwitter");
-    
-		// Adjusting the iframe height onload event
-		iframe.onload = function(){
-			iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-		}
-
-
-
 
 		let radio = document.querySelector('.radio')
 		console.log('Radio',radio)
@@ -199,43 +173,180 @@ $(function(){
 			const windowFeatures = "left=100,top=100,width=600,height=600";
 		   const handle = window.open("http://127.0.0.1:5501/radio.html", "mozillaWindow", windowFeatures);
 		})
+
+	
+	
  });
 
- ;(function(document, window, undefined) {
+/* !responsiveiframe.js */
+/* ---------------------------------------------------------------------- */
 
-	'use strict';
+// function adjustIframes(){
+//     $('iframe').each(function(){
+//       var $this = $(this)
+//           $this.css( {
+//             'background': 'white',
+//             'max-width': '658px',
+// 			'max-height': '658px',
+//             'width': 'calc(100% - 2px)',
+// 			'height': 'calc(100% - 2px)',
+//             'border-radius': '3px',
+//             'border': '1px solid rgb(219, 219, 219)',
+//             'box-shadow': 'none',
+//             'display': 'block',
+//             'margin': '0px 0px 12px',
+//             'min-width': '326px',
+//             'padding': '0px'
+//         } );
+//     });
+//   }
+//   $(window).on('resize load',adjustIframes);
+  
+//   jQuery(document).ready(function($) {
+//       $(window).on('resize load', adjustIframes);
+//       adjustIframes();
+//   });
 
-	if (!document.addEventListener) {
-		return;
-	}
 
-	var iframe;
 
-	function init_iframe() {
-		var height = Math.max(iframe.contentWindow.document.body.scrollHeight, iframe.contentWindow.document.body.offsetHeight, iframe.contentWindow.document.documentElement.clientHeight, iframe.contentWindow.document.documentElement.scrollHeight, iframe.contentWindow.document.documentElement.offsetHeight);
-		iframe.style.height = height + 'px';
-	}
 
-	function init() {
-		iframe = document.querySelector('iframe');
-		if (iframe) {
 
-			iframe.addEventListener('load', init_iframe);
 
-			try {
-				if (iframe.contentWindow.document.readyState !== 'loading') {
-					window.setTimeout(init_iframe);
-				}
-			} catch (e) {
-			}
+// function adjustIframes(){
+//   $('iframe.embedInstagram').each(function(){
+//     var
+//     $this       = $(this),
+//     w           = $this.attr('width'),
+// 	h          = $this.attr('height'),
+//     actual_w    = $this.width();
 
-		}
-	}
 
-	if (document.readyState !== 'loading') {
-		window.setTimeout(init); // Handle asynchronously
-	} else {
-		document.addEventListener('DOMContentLoaded', init);
-	}
+// 	console.log( 'W---->',w )
+// 	console.log( 'actual_w---->',actual_w  )
+// 	console.log( 'actual_h---->',actual_w  )
+// 	// console.log( '$this Class---->',$this.attr('class')  )
+// 	// console.log( '$this ClassXXXXXX---->',$this.attr('class') == 'embedInstagram' )
 
-})(document, window);
+// 	let value = $this.attr('class')
+// 	switch (value) {
+// 		case 'embedInstagram':
+			
+// 			if ( actual_w != w ){
+// 				$this.css( {
+// 					'height':`${actual_w}px`,
+// 					'padding':'0',
+// 					'background': 'white',
+// 					'max-width': '900px',
+// 					'width': 'calc(100% - 2px)',
+// 					'border-radius': '3px',
+// 					'border': '1px solid rgb(219, 219, 219)',
+// 					'box-shadow': 'none',
+// 					'display': 'block',
+// 					'margin': '1.5rem 0 1.5rem 0',
+// 					'min-width': '326px'
+// 				} );
+// 			}
+// 			break;
+// 			case 'embedTwitter':
+// 				if ( actual_w != w ){
+// 					$this.css( {
+// 						'height':`${actual_w}px`,
+// 						'padding':'1rem 10%'
+// 					} );
+// 				}
+// 				break;
+	
+// 		default:
+// 			if ( actual_w != w ){
+// 				$this.css( {
+// 					'height':`auto`,
+// 					'padding':'0'
+// 				} );
+// 			}
+// 			break;
+// 	}
+
+//   });
+// }
+// $(window).on('resize load',adjustIframes);
+
+
+
+// jQuery(document).ready(function($) {
+//     $(window).on('resize load', adjustIframes);
+//     adjustIframes();
+// });
+
+
+
+
+	
+
+	function adjustIframes(){
+		$('iframe').each(function(){
+		  
+		  let $this = $(this)
+		  let value = $this.attr('class')
+	  
+		  switch (value) {
+			  case 'embedInstagram':
+			
+
+					$this.css( {
+						'height':`${altura}px`,
+						'padding':'0',
+						'background': 'white',
+						'max-width': '900px',
+						'width': 'calc(100% - 2px)',
+						'border-radius': '3px',
+						'border': '1px solid rgb(219, 219, 219)',
+						'box-shadow': 'none',
+						'display': 'block',
+						'margin': '1.5rem 0 1.5rem 0',
+						'min-width': '326px'
+					} );
+				
+			
+
+		
+				
+				  break;
+				  case 'embedTwitter':
+
+			
+
+					$this.css( {
+						'height':`${altura}px`,
+						'padding':'0',
+						'background': 'white',
+						'max-width': '900px',
+						'width': 'calc(100% - 2px)',
+						'border-radius': '3px',
+						'border': '1px solid rgb(219, 219, 219)',
+						'box-shadow': 'none',
+						'display': 'block',
+						'margin': '1.5rem 0 1.5rem 0',
+						'min-width': '326px'
+					} );
+				
+			
+					  break;
+		  
+			  default:
+				//   if ( actual_w != w ){
+				// 	  $this.css( {
+				// 		  'height':`auto`,
+				// 		  'padding':'0'
+				// 	  } );
+				//   }
+				  break;
+		  }
+	  
+		});
+	  }
+	  $(window).on('resize load',adjustIframes);
+
+
+
+
+// window.onload=myFunction;

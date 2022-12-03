@@ -267,12 +267,11 @@ li.nav-item a i {
 }
 
 .headerSection .category a{
-	color: #fff;
+    color: #000!important;
 	text-decoration: none;
     font-size: 15px!important;
     font-family: franklin-gothic-urw,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 700!important; 
 }
 
 time{
@@ -436,13 +435,10 @@ time{
 }
 
 .headerSection .category{
-    padding: 0.8rem 1.5rem;
     display: inline-block;
-    border-radius: 3px 3px 0 0;
-	font-weight: lighter;
 	margin-bottom: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    padding: 0.3rem 0.5rem!important;
 }
 
 .bodySection{
@@ -3032,11 +3028,77 @@ p.bajada {
     padding-top: 13px;
 }
 
-iframe {
-	border: 0;
-	height: max-content; /* Proposed value, not 'auto' for compatibly reasons */
+.wrapper {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+}
+.wrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-body.framed {
-	background: #EEE;
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.twitter-tweet {width: auto!important;}
+
+.embedTwitter{
+       /* display: flex; */
+       overflow-y: scroll;
+       justify-content: center;
+       align-items: center;
+       margin: 0 1rem;
+       border: 1px solid red;
+       height: 400px;
+
+}
+
+.embedTwitter iframe{
+    position: static;
+    visibility: visible;
+    width: 550px;
+    height: 642px;
+    display: block;
+    flex-grow: 1;
+}
+
+.card .embedTwitter{
+    display: flex; 
+    max-width: 550px; 
+    width: 100%; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    height: auto;
+    overflow: hidden;
+}
+
+.width-auto{
+    width: auto!important;
+}
+
+/* .card .wrap{
+    width: auto!important;
+    display: flex;
+    max-width: 550px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .twitter-tweet iframe {
+    position: static;
+    visibility: visible;
+    width: 550px;
+    height: 642px;
+    display: block;
+    flex-grow: 1;
+} */
